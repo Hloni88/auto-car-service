@@ -9,7 +9,7 @@
 		<version>2.2.7.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>za.co.lwazi-hloni</groupId>
+	<groupId>za.co.app</groupId>
 	<artifactId>auto-car-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>auto-car-service</name>
