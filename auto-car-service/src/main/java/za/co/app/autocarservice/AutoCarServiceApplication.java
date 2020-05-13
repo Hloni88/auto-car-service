@@ -1,4 +1,4 @@
-package za.co.lwazihloni.autocarservice;
+package za.co.app.autocarservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

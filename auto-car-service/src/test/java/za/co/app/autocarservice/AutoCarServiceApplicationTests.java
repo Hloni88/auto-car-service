@@ -1,4 +1,4 @@
-package za.co.lwazihloni.autocarservice;
+package za.co.app.autocarservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
