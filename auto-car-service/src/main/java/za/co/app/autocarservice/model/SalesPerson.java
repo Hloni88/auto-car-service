@@ -3,7 +3,6 @@ package za.co.app.autocarservice.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -17,6 +16,7 @@ public class SalesPerson implements Serializable {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name = "id")
     private Long id ;
     @Column(name = "last_name")
     private String lastName;
