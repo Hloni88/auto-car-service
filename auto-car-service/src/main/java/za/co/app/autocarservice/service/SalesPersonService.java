@@ -8,8 +8,9 @@ public interface SalesPersonService {
 
     SalesPerson saveSalesPerson(SalesPerson salesPerson);
     SalesPerson getSalesPersonById(long id);
-    SalesPerson updateSalesPersonDetails(SalesPerson product);
+    SalesPerson updateSalesPersonDetails(SalesPerson salesPerson,Long id);
     int removeSalesPerson(long id);
     List<SalesPerson> getAllSalesPersons();
+    //List<SalesPerson> getAllSalesPersonsStartingWithSpecifChar(String name);
 
 }
