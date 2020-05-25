@@ -1,5 +1,6 @@
 package za.co.app.autocarservice.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,11 +13,12 @@ import java.io.Serializable;
 @Table(name ="sales_person")
 @Getter
 @Setter @NoArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class SalesPerson implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name = "id",unique = true, nullable = false)
     private Long id ;
     @Column(name = "last_name")
     private String lastName;
