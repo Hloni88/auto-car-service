@@ -6,16 +6,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import za.co.app.autocarservice.dao.SalesPersonDao;
 import za.co.app.autocarservice.model.SalesPerson;
+import za.co.app.autocarservice.util.Validation;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 @Service("salesPerson")
 @Transactional
 public class SalesPersonImpl implements SalesPersonService {
-
+    private static final Logger logger = Logger.getLogger(SalesPersonImpl.class.getName());
     @Autowired
     private SalesPersonDao salesPersonDao;
 
