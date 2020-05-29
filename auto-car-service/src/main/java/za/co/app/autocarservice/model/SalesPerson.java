@@ -22,10 +22,11 @@ public class SalesPerson implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id",unique = true, nullable = false)
     private Long id ;
-    @Column(name = "last_name")
-    private String lastName;
     @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
+    private String lastName;
+
 
     @OneToMany(mappedBy = "person_id")
     private List<SalesInvoice>  salesInvoices;
