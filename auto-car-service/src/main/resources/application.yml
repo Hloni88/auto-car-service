@@ -8,7 +8,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/car_service_db
     username: postgres
     password: password01$
-# JPA properties
+  liquibase: change-log="classpath:/db/changelog/db.changelog-master.yaml"
+
+  # JPA properties
   jpa:
     hibernate:
     ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
