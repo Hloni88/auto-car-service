@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0006
+      author: Muzi
+      changes:
+        - update:
+            catalogName:  car_service_db
+            columns:
+              - column:
+                  name:  last_name
+                  value:  Katty
+            schemaName:  public
+            tableName:  sales_person
+            where:  id = 1
+
+  - changeSet:
+      id: 0007
+      author: Robin
+      changes:
+        - update:
+            catalogName:  car_service_db
+            columns:
+              - column:
+                  name:  last_name
+                  value:  Manana
+            schemaName:  public
+            tableName:  sales_person
+            where:  id = 2
